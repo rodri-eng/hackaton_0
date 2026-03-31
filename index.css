@@ -1,6 +1,8 @@
 /* index.css MONOLÍTICO para el reto */
 /* BUG #4: esta regla sobreescribe el color correcto del h1 definido más abajo */
-h1 { color: purple; }
+h1 {
+  color: purple;
+}
 
 /* Footer Block */
 .footer {
@@ -114,7 +116,11 @@ body {
 
 /* Hero Block */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-dark) 100%
+  );
   color: var(--color-secondary);
   padding: var(--space-xxl) 0;
   min-height: 500px;
@@ -293,7 +299,11 @@ body {
 /* Team Block */
 .team {
   padding: var(--space-xxl) 0;
-  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-primary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-dark) 0%,
+    var(--color-primary) 100%
+  );
   color: var(--color-secondary);
 }
 
@@ -343,7 +353,7 @@ body {
 }
 
 .team-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -445,7 +455,9 @@ body {
     gap: var(--space-lg);
   }
 
-  .team-card { padding: var(--space-lg); }
+  .team-card {
+    padding: var(--space-lg);
+  }
 
   .team-card__photo {
     width: 100px;
@@ -454,7 +466,9 @@ body {
 }
 
 @media (max-width: 480px) {
-  .team__grid { grid-template-columns: 1fr; }
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Navigation Block */
@@ -545,9 +559,15 @@ body {
   transform-origin: center;
 }
 
-.nav__toggle-line--top    { transform: translateY(0); }
-.nav__toggle-line--middle { opacity: 1; }
-.nav__toggle-line--bottom { transform: translateY(0); }
+.nav__toggle-line--top {
+  transform: translateY(0);
+}
+.nav__toggle-line--middle {
+  opacity: 1;
+}
+.nav__toggle-line--bottom {
+  transform: translateY(0);
+}
 
 .nav__checkbox:checked + .nav__toggle .nav__toggle-line--top {
   transform: translateY(7px) rotate(45deg);
@@ -596,9 +616,15 @@ body {
     opacity: 1;
   }
 
-  .nav__checkbox:checked ~ .nav__list .nav__item:nth-child(1) { transition-delay: 0.1s; }
-  .nav__checkbox:checked ~ .nav__list .nav__item:nth-child(2) { transition-delay: 0.2s; }
-  .nav__checkbox:checked ~ .nav__list .nav__item:nth-child(3) { transition-delay: 0.3s; }
+  .nav__checkbox:checked ~ .nav__list .nav__item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .nav__checkbox:checked ~ .nav__list .nav__item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .nav__checkbox:checked ~ .nav__list .nav__item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
 
   .nav__link {
     display: block;
@@ -612,11 +638,15 @@ body {
     transform: translateX(10px);
   }
 
-  .nav__toggle { display: flex; }
+  .nav__toggle {
+    display: flex;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
-  .nav__list { gap: var(--space-md); }
+  .nav__list {
+    gap: var(--space-md);
+  }
 }
 
 /* CSS Variables - Paleta de colores */
@@ -627,7 +657,7 @@ body {
   --color-light: #ede9fe;
   --color-accent: #c4b5fd;
 
-  --font-family: 'Arial', sans-serif;
+  --font-family: "Arial", sans-serif;
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-large: 18px;
@@ -673,17 +703,30 @@ body {
   padding: 0 var(--space-sm);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: var(--space-sm);
 }
 
-h1 { font-size: var(--font-size-hero); }
-h2 { font-size: var(--font-size-xxl); }
-h3 { font-size: var(--font-size-xl); }
+h1 {
+  font-size: var(--font-size-hero);
+}
+h2 {
+  font-size: var(--font-size-xxl);
+}
+h3 {
+  font-size: var(--font-size-xl);
+}
 
-p { margin-bottom: var(--space-sm); }
+p {
+  margin-bottom: var(--space-sm);
+}
 
 a {
   color: var(--color-primary);
@@ -691,7 +734,9 @@ a {
   transition: var(--transition);
 }
 
-a:hover { opacity: 0.8; }
+a:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 768px) {
   :root {
