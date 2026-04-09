@@ -1,10 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estructuras de Datos - CS2031 Team</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/page.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/team.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -30,15 +35,15 @@
             <ul class="nav__list">
               <li class="nav__item">
                 <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
-                <a href="#inicio" class="nav__link">Inicio</a>
+                <a href="#hero" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
                 <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
-                <a href="#sobre" class="nav__link">Acerca de</a>
+                <a href="#about" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
                 <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
-                <a href="#integrantes" class="nav__link">Equipo</a>
+                <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
           </div>
@@ -51,15 +56,14 @@
             <div class="hero__content">
               <h1 class="hero__title">Estructuras de Datos & Algoritmos</h1>
               <p class="hero__subtitle">
-                Explorando el mundo de los algoritmos y la eficiencia computacional
+                Explorando el mundo de los algoritmos y la eficiencia
+                computacional
               </p>
               <div class="hero__actions">
                 <a href="#about" class="hero__button hero__button--primary"
                   >Aprender más</a
                 >
-                <a
-                  href="#team"
-                  class="hero__button hero__button--secondary"
+                <a href="#team" class="hero__button hero__button--secondary"
                   >Conocer al equipo</a
                 >
               </div>
@@ -136,27 +140,87 @@
                 <div class="team-card__image">
                   <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
                   <img
-                    src="https://github.com/francescofq"
-                    alt="https://github.com/francescofq"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a1/UTEC-Logo.jpg"
+                    alt="Rodrigo Valdiviezo"
                     class="team-card__photo"
                   />
                 </div>
                 <div class="team-card__content">
                   <!-- Aquí tu nombre completo -->
-                  <h3 class="team-card__name">Francesco Aroldo Ferrante Quino</h3>
+                  <h3 class="team-card__name">Jose Rodrigo Valdiviezo Ortiz</h3>
                   <!-- Aquí tu especialidad o rol -->
-                  <p class="team-card__role">Ciencias de la computacion</p>
+                  <p class="team-card__role">Desarrollador Web</p>
                   <div class="team-card__social">
                     <!-- Reemplaza # con tu URL de GitHub -->
                     <a
-                      href="https://github.com/francescofq"
+                      href="https://github.com/RodrigoValdiviezoUtec"
                       class="team-card__social-link team-card__social-link--github"
                     >
                       <i class="fab fa-github"></i>
                     </a>
                     <!-- Reemplaza # con tu URL de LinkedIn -->
                     <a
-                      href="https://www.linkedin.com/in/francesco-aroldo-ferrante-quino-a5a788396/"
+                      href="https://www.linkedin.com/in/jos%C3%A9-rodrigo-valdiviezo-ortiz-8478363bb/"
+                      class="team-card__social-link team-card__social-link--linkedin"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTEGRANTE 2: Reemplaza con tus datos -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://img.freepik.com/foto-gratis/retrato-personaje-anime-estrellas_23-2151556365.jpg?semt=ais_incoming&w=740&q=80"
+                    alt="Nombre Integrante 2"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Rodrigo Franco Huertos Ochoa</h3>
+                  <p class="team-card__role">CS</p>
+                  <div class="team-card__social">
+                    <a
+                      href="https://github.com/rodri-eng"
+                      class="team-card__social-link team-card__social-link--github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://github.com/rodri-eng"
+                      class="team-card__social-link team-card__social-link--linkedin"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTEGRANTE 3: Reemplaza con tus datos -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://img.freepik.com/foto-gratis/retrato-personaje-anime-estrellas_23-2151556365.jpg?semt=ais_incoming&w=740&q=80"
+                    alt="Francesco Aroldo Ferrante Aquino"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">
+                    Francesco Aroldo Ferrante Aquino
+                  </h3>
+                  <p class="team-card__role">CS</p>
+                  <div class="team-card__social">
+                    <a
+                      href="https://github.com/francescofq"
+                      class="team-card__social-link team-card__social-link--github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://github.com/francescofq"
                       class="team-card__social-link team-card__social-link--linkedin"
                     >
                       <i class="fab fa-linkedin"></i>
@@ -174,7 +238,9 @@
           <div class="footer__content">
             <div class="footer__brand">
               <span class="footer__logo">CS2031</span>
-              <p class="footer__tagline">Aprendiendo Estructuras de Datos juntos</p>
+              <p class="footer__tagline">
+                Aprendiendo Estructuras de Datos juntos
+              </p>
             </div>
             <div class="footer__links">
               <a href="https://github.com" class="footer__link">
